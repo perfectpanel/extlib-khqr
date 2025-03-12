@@ -28,7 +28,7 @@ $merchantInfo = new MerchantInfo(
     'Dev Bank',
     null,
     null,
-    null,
+    0.0,
     '85512345678'
 );
 
