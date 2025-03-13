@@ -27,7 +27,7 @@ class GlobalUniqueIdentifier extends TagLengthString
      */
     public array $data;
 
-    public function __construct(string $tag, mixed $valueObject)
+    public function __construct($tag, $valueObject)
     {
         if (is_null($valueObject)) {
             throw new KHQRException(KHQRException::MERCHANT_TYPE_REQUIRED);
