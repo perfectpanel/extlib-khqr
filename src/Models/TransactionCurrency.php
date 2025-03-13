@@ -9,7 +9,7 @@ use KHQR\Helpers\KHQRData;
 
 class TransactionCurrency extends TagLengthString
 {
-    public function __construct(string $tag, int|string|null $value)
+    public function __construct(string $tag, $value)
     {
         if ($value == null) {
             throw new KHQRException(KHQRException::CURRENCY_TYPE_REQUIRED);

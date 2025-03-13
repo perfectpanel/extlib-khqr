@@ -444,7 +444,7 @@ class BakongKHQR
         return $decodeValue;
     }
 
-    private static function generateKHQR(MerchantInfo|IndividualInfo $info, string $type): string
+    private static function generateKHQR($info, $type): string
     {
         if ($type === KHQRData::MERCHANT_TYPE_MERCHANT) {
             $merchantInfo = [
